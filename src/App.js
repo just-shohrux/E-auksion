@@ -1,25 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import Navbar from "./layouts/navbar/Navbar";
+import GlobalStyle from "./GlobalStyle";
+import Footer from "./layouts/footer";
+import ContactPage from "./pages/contact-page";
+import LandingPage from "./pages/landing-page";
+import HelpPage from "./pages/help-page";
+import AboutActionPage from "./pages/about-auction-page";
+import Topbar from "./layouts/topbar";
+import DropdownExampleInline from "./components/language/Languages";
+import Sidebar from "./layouts/sidebar/Sidebar";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Topbar />
+      <Navbar />
+      {/* <LandingPage /> */}
+      {/* <ContactPage /> */}
+      {/* <HelpPage /> */}
+      {/* <AboutActionPage />
+      <Footer /> */}
+      <GlobalStyle />
     </div>
   );
-}
+};
 
 export default App;
