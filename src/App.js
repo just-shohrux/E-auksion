@@ -12,23 +12,29 @@ import LoginPage from "./pages/login-page";
 import RecoveryPage from "./pages/recovery-page";
 import RegisterPage from "./pages/register-page";
 import VerifyLoginPage from "./pages/verify-login-page";
-
+import SidebarItem from "./layouts/sidebar/SidebarItem";
+import SidebarItemList from "./layouts/sidebar/SidebarItemList";
+import Sidebar from "./layouts/sidebar/Sidebar";
+import LotDetailPage from "./pages/lot-detail-page";
+import Breadcrump from "./components/breadcrump/Breadcrump";
 const App = () => {
   return (
     <div>
       <Topbar />
       <Navbar />
+      <Breadcrump />
+      {/* <LotDetailPage /> */}
       {/* <LoginPage /> */}
       {/* <RecoveryPage /> */}
       {/* <RegisterPage /> */}
-      <VerifyLoginPage />
+      {/* <VerifyLoginPage /> */}
       {/* <ChangeLoginPage /> */}
-      {/* <LotsPage /> */}
+      <LotsPage />
       {/* <LandingPage /> */}
       {/* <ContactPage /> */}
       {/* <HelpPage /> */}
-      {/* <AboutActionPage />
-      <Footer /> */}
+      {/* <AboutActionPage /> */}
+      <Footer />
       <GlobalStyle />
     </div>
   );
