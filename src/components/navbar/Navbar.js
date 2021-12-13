@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 import { FaBars, FaChevronLeft } from "react-icons/fa";
-import Logo from "../../components/logo/Logo";
+import Logo from "../logo/Logo";
 export const Bars = styled(FaBars)`
   color: #023581;
   font-size: 1.8rem;

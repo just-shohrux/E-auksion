@@ -9,7 +9,7 @@ import { BsEyeglasses } from "react-icons/bs";
 import { FiUserPlus, FiUser } from "react-icons/fi";
 import styled, { css } from "styled-components";
 
-import Languages from "../../components/language/Languages";
+import Languages from "../language/Languages";
 
 const Clock = () => {
   let hour = new Date().getHours();
@@ -80,6 +80,7 @@ const TopbarStyle = styled.nav`
     padding: 0 150px;
     z-index: 99;
     border-bottom: 1px solid rgba(3, 58, 141, 0.2);
+    background-color: #fff;
   }
 
   .float-left {
