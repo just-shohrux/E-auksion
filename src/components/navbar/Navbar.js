@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 import { FaBars, FaChevronLeft } from "react-icons/fa";
+import {NavLink} from "react-router-dom";
 import Logo from "../logo/Logo";
 export const Bars = styled(FaBars)`
   color: #023581;
@@ -169,23 +170,23 @@ const Navbar = () => {
       <nav className="nav">
         <div className="navbar">
           <div className="logo">
-            <a to="/">
+            <NavLink to="/">
               <Logo />
-            </a>
+            </NavLink>
           </div>
           <ul className={isOpen ? "nav-links nav-active" : "nav-links"}>
             <Times onClick={OpenMenuHandler} />
             <li>
-              <a to="/lots">Lotlar</a>
+              <NavLink to="/lots">Lotlar</NavLink>
             </li>
             <li>
-              <a to="/help">Yordam</a>
+              <NavLink to="/help">Yordam</NavLink>
             </li>
             <li>
-              <a to="/about">Auksion haqida</a>
+              <NavLink to="/about">Auksion haqida</NavLink>
             </li>
             <li>
-              <a to="/contact">Bog'lanish</a>
+              <NavLink to="/contact">Bog'lanish</NavLink>
             </li>
           </ul>
           <div className="bar" onClick={OpenMenuHandler}>
