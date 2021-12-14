@@ -3,7 +3,7 @@ import styled from "styled-components";
 import SidebarItemList from "./SidebarItemList";
 
 const SidebarStyle = styled.div`
-  width: 380px;
+  width: 400px;
   border: 1px solid rgba(0, 0, 0, 0.125);
   @media screen and (max-width: 1600px) {
     width: 100%;

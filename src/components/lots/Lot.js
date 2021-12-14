@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 import { AiOutlineHeart } from "react-icons/ai";
 import lotNumber from "../../assets/images/icons/lot-number-icon.png";
 import lotPrice from "../../assets/images/icons/lot-pricing-icon.png";
@@ -13,7 +14,6 @@ const LotStyle = styled.div`
   .lot-card {
     display: flex;
     background-color: #fff;
-    margin: 20px;
     border-radius: 8px;
     box-shadow: 0px 0px 4px 2px rgb(64 74 139 / 16%);
     border: 1px solid #fff;
@@ -73,7 +73,7 @@ const LotStyle = styled.div`
     margin-left: 10px;
     display: flex;
     justify-content: space-between;
-    width: 900px;
+    width: 800px;
   }
   .lot-prices {
     display: flex;
@@ -84,12 +84,13 @@ const LotStyle = styled.div`
   .lot-address {
     width: 600px;
   }
-  .lot-buttons {
+  .lot-links {
     width: 220px;
     display: flex;
     justify-content: space-between;
 
-    button {
+    a {
+      text-decoration: none;
       outline: none;
       border: none;
       padding: 10px 15px;
@@ -122,7 +123,7 @@ const LotStyle = styled.div`
     .lot-address {
       width: 600px;
     }
-    .lot-buttons {
+    .lot-links {
       width: 220px;
     }
   }
@@ -133,7 +134,7 @@ const LotStyle = styled.div`
     .lot-address {
       width: 500px;
     }
-    .lot-buttons {
+    .lot-links {
       width: 200px;
     }
   }
@@ -161,7 +162,7 @@ const LotStyle = styled.div`
     .lot-address {
       width: 400px;
     }
-    .lot-buttons {
+    .lot-links {
       width: 400px;
     }
   }
@@ -189,7 +190,7 @@ const LotStyle = styled.div`
     .lot-address {
       width: 300px;
     }
-    .lot-buttons {
+    .lot-links {
       width: 300px;
     }
   }
@@ -266,9 +267,9 @@ const Lot = (props) => {
               </div>
             </div>
             <div className="lot-card-information-col">
-              <div className="lot-buttons">
-                <button>Batafsil</button>
-                <button>Ariza berish</button>
+              <div className="lot-links">
+                <NavLink to="/lot-detail">Batafsil</NavLink>
+                <NavLink to="/lot-detail"> Ariza berish</NavLink>
               </div>
             </div>
           </div>

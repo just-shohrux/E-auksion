@@ -17,7 +17,7 @@ import StepImag14 from "../../assets/images/participating14_uz.png";
 import StepImag15 from "../../assets/images/participating15_uz.png";
 import StepImag16 from "../../assets/images/participating16_uz.png";
 import StepImag17 from "../../assets/images/participating17_uz.png";
-const ParticipatingPage = (props) => {
+const Participating = (props) => {
   return (
     <StaticPage>
       <section>
@@ -169,4 +169,4 @@ const ParticipatingPage = (props) => {
   );
 };
 
-export default ParticipatingPage;
+export default Participating;

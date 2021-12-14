@@ -9,5 +9,8 @@ const GlobalStyle = createGlobalStyle`
 body{
     font-family: 'Roboto', sans-serif;
 }
+.main{
+    padding-top:114px;
+}
 `;
 export default GlobalStyle;

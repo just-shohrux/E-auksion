@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { FaSearch } from "react-icons/fa";
 import styled from "styled-components";
 import searchLogo from "../../../assets/images/icons/lot-number-icon2.png";
-import Container from "../../container";
 import Section from "../../section/Section";
 
 const SearchIcon = styled(FaSearch)`
@@ -13,6 +12,8 @@ const SearchIcon = styled(FaSearch)`
 const SearchStyle = styled.div`
   .search {
     padding: 35px 0;
+    display: flex;
+    justify-content: center;
   }
   .search-form {
     width: 1120px;
@@ -93,21 +94,19 @@ const SearchStyle = styled.div`
 const Search = () => {
   return (
     <Section secondary>
-      <Container>
-        <SearchStyle>
-          <div className="search">
-            <div className="search-form">
-              <div className="search-form-input">
-                <img src={searchLogo} />
-                <input placeholder="Lot raqami yoki mol-mulk nomi"></input>
-              </div>
-              <div className="search-form-button">
-                <SearchIcon />
-              </div>
+      <SearchStyle>
+        <div className="search">
+          <div className="search-form">
+            <div className="search-form-input">
+              <img src={searchLogo} />
+              <input placeholder="Lot raqami yoki mol-mulk nomi"></input>
+            </div>
+            <div className="search-form-button">
+              <SearchIcon />
             </div>
           </div>
-        </SearchStyle>
-      </Container>
+        </div>
+      </SearchStyle>
     </Section>
   );
 };

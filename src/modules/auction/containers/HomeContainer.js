@@ -7,19 +7,15 @@ import Statistics from "../../../components/landing-page-sections/statistic-sect
 import Payments from "../../../components/landing-page-sections/payment-section/Payments";
 
 const HomeContainer = () => {
-    return (
-        <main
-            style={{
-                paddingTop: "114px",
-            }}
-        >
-            <Search />
-            <Categories />
-            <Lots />
-            <Statistics />
-            <Payments />
-        </main>
-    );
+  return (
+    <main className="main">
+      <Search />
+      <Categories />
+      <Lots />
+      <Statistics />
+      <Payments />
+    </main>
+  );
 };
 
 export default HomeContainer;

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 import { FaBars, FaChevronLeft } from "react-icons/fa";
-import {NavLink} from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import Logo from "../logo/Logo";
 export const Bars = styled(FaBars)`
   color: #023581;

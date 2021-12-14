@@ -1,10 +1,10 @@
 import React from "react";
 import styled from "styled-components";
 
-const BreadcrumpStyle = styled.div`
+const BreadcrumbStyle = styled.div`
   padding-top: 114px;
   padding-bottom: 20px;
-  .breadcrump-title {
+  .breadcrumb-title {
     padding: 0 150px;
     height: 36px;
     width: 100%;
@@ -21,12 +21,12 @@ const BreadcrumpStyle = styled.div`
   }
 `;
 
-const Breadcrump = () => {
+const Breadcrumb = () => {
   return (
-    <BreadcrumpStyle>
-      <div className="breadcrump-title">Asosiy sahifa /</div>
-    </BreadcrumpStyle>
+    <BreadcrumbStyle>
+      <div className="breadcrumb-title">Asosiy sahifa /</div>
+    </BreadcrumbStyle>
   );
 };
 
-export default Breadcrump;
+export default Breadcrumb;

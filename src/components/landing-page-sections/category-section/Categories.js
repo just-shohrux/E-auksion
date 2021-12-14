@@ -25,20 +25,17 @@ const Categories = (props) => {
   };
 
   return (
-    <div>
-      <Section>
-        <Title>MULK TURLARI</Title>
-
-        <Container>
+    <section>
+      <Container>
+        <Flex justify column>
+          <Title>MULK TURLARI</Title>
           <CategoryList items={items} />
-        </Container>
-        <Flex justify>
           <Button onClick={showCategoryHandler}>
             {changeText ? "Barchasini ko'rish" : "Yopish"}
           </Button>
         </Flex>
-      </Section>
-    </div>
+      </Container>
+    </section>
   );
 };
 

@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 import {
   FaRegCalendarAlt,
   FaRegClock,
@@ -116,6 +117,10 @@ const TopbarStyle = styled.nav`
       background-color: rgba(3, 58, 141, 0.2);
     }
   }
+  .topbar-item a {
+    text-decoration: none;
+    color: #023581;
+  }
   @media screen and (max-width: 1600px) {
     .topbar {
       padding: 0 50px;
@@ -178,16 +183,16 @@ const Topbar = () => {
             </div>
           </div>
           <div className="topbar-item topbar-btn  topbar-link-register  hidden">
-            <a>
+            <NavLink to="/register">
               <AddUserIcon />
               Ro'yxatdan o'tish
-            </a>
+            </NavLink>
           </div>
           <div className="topbar-item topbar-btn  topbar-link-login hidden">
-            <span>
+            <NavLink to="/login">
               <UserIcon />
-            </span>
-            <span>Kabinetga kirish</span>
+              Kabinetga kirish
+            </NavLink>
           </div>
         </div>
       </div>

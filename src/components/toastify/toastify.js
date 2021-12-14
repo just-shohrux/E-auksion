@@ -1,13 +1,13 @@
-import React from 'react';
-import { ToastContainer } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
+import React from "react";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const Toastify = (props) => {
-    return (
-        <>
-            <ToastContainer />
-        </>
-    );
+  return (
+    <>
+      <ToastContainer />
+    </>
+  );
 };
 
 export default Toastify;
