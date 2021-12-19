@@ -4,7 +4,7 @@ import styled, { css } from "styled-components";
 const StyledTitle = styled.h2`
   font-size: 28px;
   color: #023581;
-  font-weight: 400;
+  font-weight: 500;
   line-height: 1.5;
   padding: 20px 0;
   text-align: center
@@ -22,7 +22,7 @@ const StyledTitle = styled.h2`
     font-size: 20px;
   }
   @media screen and (max-width: 768px) {
-    font-size: 14px;
+    font-size: 16px;
   }
 `;
 const Title = (props) => {

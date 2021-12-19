@@ -10,9 +10,7 @@ const TrashIcon = styled(FaTrashAlt)`
   color: #fff;
 `;
 const LotsListStyle = styled.div`
-  padding: 0 150px 0 150px;
   display: flex;
-
   main {
     margin-left: 15px;
     background-color: #ebf3ff;
@@ -45,7 +43,7 @@ const LotsListStyle = styled.div`
       margin: 10px 5px;
 
       button:first-child {
-        width: 240px;
+        width: 230px;
         height: 40px;
         color: #fff;
         background-color: #023581;
@@ -98,21 +96,54 @@ const LotsListStyle = styled.div`
     width: 30px;
     height: 30px;
   }
-  @media screen and (max-width: 1880px) {
-    padding: 134px 100px 0 100px;
-  }
+
   @media screen and (max-width: 1600px) {
     flex-direction: column;
     main {
       margin-left: 0;
     }
   }
-  @media screen and (max-width: 1300px) {
-    padding: 134px 30px 0 30px;
+  @media screen and (max-width: 1320px) {
+    .search-form {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .lots-list {
+      flex-wrap: wrap;
+      display: flex;
+      justify-content: space-between;
+    }
   }
   @media screen and (max-width: 1024px) {
-    padding: 134px 10px 0 10px;
+    .lots-list {
+      justify-content: center;
+    }
+    main {
+      margin-left: 0;
+      padding: 20px;
+    }
+    section {
+      margin-top: 10px;
+      padding: 0;
+      margin-left: 0;
+    }
   }
+  @media screen and (max-width:768px){
+    .search-form {
+    justify-content: center;
+    input,
+    select {
+      width:350px;
+  }
+  .search-form-buttons {
+      display: flex;
+      margin: 10px 5px;
+
+      button:first-child {
+        width: 280px;
+        height: 40px;
+  }
+}
 `;
 
 const LotList = () => {
@@ -136,14 +167,16 @@ const LotList = () => {
             </div>
           </form>
         </div>
-        {lots.map((lots) => (
-          <Lot
-            key={lots.id}
-            title={lots.title}
-            image={lots.image}
-            number={lots.number}
-          />
-        ))}
+        <div className="lots-list">
+          {lots.map((lots) => (
+            <Lot
+              key={lots.id}
+              title={lots.title}
+              image={lots.image}
+              number={lots.number}
+            />
+          ))}
+        </div>
       </section>
     </LotsListStyle>
   );

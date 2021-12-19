@@ -1,23 +1,11 @@
 import React from "react";
 import styled from "styled-components";
-
 const BreadcrumbStyle = styled.div`
-  padding-top: 114px;
-  padding-bottom: 20px;
+  width: 100%;
   .breadcrumb-title {
-    padding: 0 150px;
-    height: 36px;
-    width: 100%;
-    background-color: #ebf3ff;
+    padding: 10px 0;
     display: flex;
     align-items: center;
-  }
-  @media screen and (max-width: 1500px) {
-    padding: 0 100px;
-  }
-
-  @media screen and (max-width: 768px) {
-    padding: 0 40px;
   }
 `;
 

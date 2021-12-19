@@ -2,8 +2,6 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import { AiOutlineHeart } from "react-icons/ai";
 import lotNumber from "../../assets/images/icons/lot-number-icon.png";
-import lotPrice from "../../assets/images/icons/lot-pricing-icon.png";
-import calendarIcon from "../../assets/images/icons/end_auction_date.png";
 import styled from "styled-components";
 
 const HeartIcon = styled(AiOutlineHeart)`

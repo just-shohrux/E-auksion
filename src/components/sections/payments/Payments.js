@@ -1,19 +1,13 @@
 import React from "react";
-import Section from "../../section/Section";
 import Title from "../../title/Title";
 import PaymentList from "./PaymentList";
 
-const Payments = (props) => {
+const Payments = () => {
   return (
-    <Section
-      secondary
-      style={{
-        paddingBottom: "20px",
-      }}
-    >
+    <section className="section-secondary">
       <Title>TO‘LOV USULLARI</Title>
       <PaymentList />
-    </Section>
+    </section>
   );
 };
 

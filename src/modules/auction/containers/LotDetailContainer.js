@@ -4,10 +4,14 @@ import LotDetail from "../../../components/detail";
 
 const LotDetailContainer = ({ ...props }) => {
   return (
-    <main>
-      <Breadcrumb />
-      <LotDetail />
-    </main>
+    <>
+      <nav className="breadcrumb">
+        <Breadcrumb />
+      </nav>
+      <main>
+        <LotDetail />
+      </main>
+    </>
   );
 };
 

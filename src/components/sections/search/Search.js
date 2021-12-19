@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { FaSearch } from "react-icons/fa";
 import styled from "styled-components";
 import searchLogo from "../../../assets/images/icons/lot-number-icon2.png";
-import Section from "../../section/Section";
 
 const SearchIcon = styled(FaSearch)`
   color: rgba(0, 0, 0, 0.54);
@@ -93,8 +92,8 @@ const SearchStyle = styled.div`
 
 const Search = () => {
   return (
-    <Section secondary>
-      <SearchStyle>
+    <SearchStyle>
+      <section className="section-secondary">
         <div className="search">
           <div className="search-form">
             <div className="search-form-input">
@@ -106,8 +105,8 @@ const Search = () => {
             </div>
           </div>
         </div>
-      </SearchStyle>
-    </Section>
+      </section>
+    </SearchStyle>
   );
 };
 

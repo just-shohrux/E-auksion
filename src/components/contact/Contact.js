@@ -176,6 +176,9 @@ const ContactStyle = styled.div`
       margin-bottom: 60px;
       margin-top: 50px;
     }
+    .contact-title {
+      padding-bottom: 15px;
+    }
     .contact-map {
       top: 60%;
     }

@@ -4,10 +4,14 @@ import Help from "../../../components/help";
 
 const HelpContainer = () => {
   return (
-    <main>
-      <Breadcrumb />
-      <Help />
-    </main>
+    <>
+      <nav className="breadcrumb">
+        <Breadcrumb />
+      </nav>
+      <main>
+        <Help />
+      </main>
+    </>
   );
 };
 export default HelpContainer;

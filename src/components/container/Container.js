@@ -9,6 +9,10 @@ const StyledContainer = styled.div`
     padding: 0 50px;
   }
   @media (max-width: 768px) {
+    padding: 0 20px;
+  }
+  @media (max-width: 376px) {
+    padding: 0 10px;
   }
 `;
 const Container = (props) => {

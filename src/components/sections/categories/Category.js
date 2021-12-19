@@ -13,6 +13,7 @@ const CategoryStyle = styled.div`
       background: #023581;
       .categories-title h3 {
         color: #fff;
+        font;
       }
     }
   }
@@ -30,23 +31,33 @@ const CategoryStyle = styled.div`
     color: #023581;
     font-size: 18px;
   }
-  @media (max-width: 1900px) {
-    .card {
-      width: 200px;
-      height: 200px;
-    }
+  
   }
   @media (max-width: 768px) {
     .card {
-      width: 150px;
-      height: 150px;
+      width: 190px;
+      height: 190px;
+
+      img {
+        width: 90px;
+        height: 90px;
+      }
+      h3 {
+        font-size: 14px;
+      }
+    }
+  }\
+  @media (max-width: 376px) {
+    .card {
+      width: 160px;
+      height: 160px;
 
       img {
         width: 70px;
         height: 70px;
       }
       h3 {
-        font-size: 12px;
+        font-size: 14px;
       }
     }
   }

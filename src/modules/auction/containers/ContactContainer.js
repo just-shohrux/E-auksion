@@ -4,10 +4,14 @@ import Breadcrumb from "../../../components/breadcrumb/Breadcrumb";
 
 const ContactContainer = () => {
   return (
-    <main>
-      <Breadcrumb />
-      <Contact />
-    </main>
+    <>
+      <nav className="breadcrumb">
+        <Breadcrumb />
+      </nav>
+      <main>
+        <Contact />
+      </main>
+    </>
   );
 };
 

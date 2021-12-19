@@ -10,8 +10,6 @@ import { BsEyeglasses } from "react-icons/bs";
 import { FiUserPlus, FiUser } from "react-icons/fi";
 import styled, { css } from "styled-components";
 
-import Languages from "../language/Languages";
-
 const Clock = () => {
   let hour = new Date().getHours();
   let minute = new Date().getMinutes();
@@ -177,11 +175,7 @@ const Topbar = () => {
           <div className="topbar-item topbar-btn hidden">
             <HeartIcon />
           </div>
-          <div>
-            <div className=" topbar-item  topbar-btn">
-              <Languages />
-            </div>
-          </div>
+          <div></div>
           <div className="topbar-item topbar-btn  topbar-link-register  hidden">
             <NavLink to="/register">
               <AddUserIcon />

@@ -33,16 +33,18 @@ const StatisticListStyle = styled.div`
 const StatisticList = (props) => {
   return (
     <Container>
-      <Flex wrap justify>
-        {content.map((content) => (
-          <Statistic
-            key={content.id}
-            image={content.image}
-            title={content.title}
-            count={content.count}
-          />
-        ))}
-      </Flex>
+      <section>
+        <Flex wrap justify>
+          {content.map((content) => (
+            <Statistic
+              key={content.id}
+              image={content.image}
+              title={content.title}
+              count={content.count}
+            />
+          ))}
+        </Flex>
+      </section>
     </Container>
   );
 };

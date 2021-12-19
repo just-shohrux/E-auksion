@@ -290,50 +290,9 @@ const Register = () => {
           <div className="icon">
             <ArrowLeft />
           </div>
-          <div className="text">
-            Ishtirokchi/buyurtmachi sifatida tizimga kirish
-          </div>
+          <div className="text">Ishtirokchi sifatida tizimga kirish</div>
         </div>
         <div className="card">
-          <form>
-            <div className="form-check form-check-inline form-check-inline1">
-              <input
-                className="form-check-input"
-                type="radio"
-                name="inlineRadioOptions"
-                id="inlineRadio1"
-                value="option1"
-              />
-              <label class="form-check-label" for="inlineRadio1">
-                Xaridor
-              </label>
-            </div>
-            <div className="form-check form-check-inline form-check-inline2">
-              <input
-                className="form-check-input"
-                type="radio"
-                name="inlineRadioOptions"
-                id="inlineRadio2"
-                value="option2"
-              />
-              <label className="form-check-label" for="inlineRadio2">
-                Buyurtmachi
-              </label>
-            </div>
-            <div className="form-check form-check-inline form-check-inline3">
-              <input
-                className="form-check-input"
-                type="radio"
-                name="inlineRadioOptions"
-                id="inlineRadio3"
-                value="option3"
-              />
-              <label className="form-check-label" for="inlineRadio3">
-                Xaridor va Buyurtmachi
-              </label>
-            </div>
-          </form>
-          <div className="border-line"></div>
           <div className="form-floating ">
             <input
               type="email"

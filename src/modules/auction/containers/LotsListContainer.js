@@ -1,12 +1,19 @@
 import React from "react";
 import Breadcrumb from "../../../components/breadcrumb/Breadcrumb";
-import LotList from "../../../components/lots/LotList";
+import Container from "../../../components/container/Container";
+import LotsList from "../../../components/lots/LotList";
 const LotsListContainer = ({ ...props }) => {
   return (
-    <main>
-      <Breadcrumb />
-      <LotList />
-    </main>
+    <>
+      <nav className="breadcrumb">
+        <Breadcrumb />
+      </nav>
+      <main>
+        <Container>
+          <LotsList />
+        </Container>
+      </main>
+    </>
   );
 };
 

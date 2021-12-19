@@ -6,12 +6,25 @@ const PaymentStyle = styled.div`
     cursor: pointer;
   }
   .payment-card img {
-    width: 230px;
-    padding: 20px;
+    width: 255px;
+    padding: 10px;
+    margin: 5px;
+  }
+  @media (max-width: 1024px) {
+    .payment-card img {
+      width: 280px;
+    }
   }
   @media (max-width: 768px) {
     .payment-card img {
-      width: 300px;
+      padding: 10px;
+      width: 200px;
+    }
+  }
+  @media (max-width: 375px) {
+    .payment-card img {
+      padding: 10px;
+      width: 160px;
     }
   }
 `;

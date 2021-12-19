@@ -1,27 +1,51 @@
 import React from "react";
 import styled from "styled-components";
-import Accordion from "../accordion/Accordion";
+import AccordionItems from "../accordion/AccordionItems";
 import Participating from "../participating";
+import Container from "../container";
 const AboutAuctionStyle = styled.div`
-  display: flex;
-  padding: 0 150px 100px 150px;
-  @media screen and (max-width: 1500px) {
-    padding: 0 50px;
+  main {
+    display: flex;
   }
-  @media screen and (max-width: 1024px) {
-    flex-direction: column;
+  aside {
+    margin-right: 20px;
+
+    > div {
+      border-radius: 3px;
+      padding: 40px 20px;
+      background-color: #ebf3ff;
+      width: 400px;
+    }
   }
-  @media screen and (max-width: 768px) {
-    padding: 0 20px;
+  @media (max-width: 1024px) {
+    main {
+      display: flex;
+      flex-direction: column;
+    }
+    aside {
+      margin-right: 0;
+      width: 100%;
+      > div {
+        width: 100%;
+      }
+    }
   }
 `;
 
 const AboutAuction = () => {
   return (
-    <AboutAuctionStyle>
-      <Accordion />
-      <Participating />
-    </AboutAuctionStyle>
+    <Container>
+      <AboutAuctionStyle>
+        <main>
+          <aside>
+            <AccordionItems />
+          </aside>
+          <section>
+            <Participating />
+          </section>
+        </main>
+      </AboutAuctionStyle>
+    </Container>
   );
 };
 

@@ -1,28 +1,51 @@
 import React from "react";
 import styled from "styled-components";
-import ParticipatingPage from "../../pages/static-pages/ParticipatingPage";
-import Accordion from "../accordion/Accordion";
+import AccordionItems from "../accordion/AccordionItems";
+import Container from "../container/Container";
 import Participating from "../participating";
 const HelpStyle = styled.div`
-  display: flex;
-  padding: 0 150px 100px 150px;
-  @media screen and (max-width: 1500px) {
-    padding: 0 50px;
+  main {
+    display: flex;
   }
-  @media screen and (max-width: 1024px) {
-    flex-direction: column;
+  aside {
+    margin-right: 20px;
+
+    > div {
+      border-radius: 3px;
+      padding: 40px 20px;
+      background-color: #ebf3ff;
+      width: 400px;
+    }
   }
-  @media screen and (max-width: 768px) {
-    padding: 0 20px;
+  @media (max-width: 1024px) {
+    main {
+      display: flex;
+      flex-direction: column;
+    }
+    aside {
+      margin-right: 0;
+      width: 100%;
+      > div {
+        width: 100%;
+      }
+    }
   }
 `;
 
 const Help = () => {
   return (
-    <HelpStyle>
-      <Accordion />
-      <Participating />
-    </HelpStyle>
+    <Container>
+      <HelpStyle>
+        <main>
+          <aside>
+            <AccordionItems />
+          </aside>
+          <section>
+            <Participating />
+          </section>
+        </main>
+      </HelpStyle>
+    </Container>
   );
 };
 

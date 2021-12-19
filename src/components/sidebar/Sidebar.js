@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import SidebarItemList from "./SidebarItemList";
+import SidebarItems from "./SidebarItems";
 
 const SidebarStyle = styled.div`
   width: 400px;
@@ -13,7 +13,7 @@ const SidebarStyle = styled.div`
 const Sidebar = () => {
   return (
     <SidebarStyle>
-      <SidebarItemList />
+      <SidebarItems />
     </SidebarStyle>
   );
 };

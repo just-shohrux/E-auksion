@@ -1,10 +1,9 @@
 import React from "react";
-
-import Lots from "../../../components/landing-page-sections/lot-section/Lots";
-import Search from "../../../components/landing-page-sections/search-section/Search";
-import Categories from "../../../components/landing-page-sections/category-section/Categories";
-import Statistics from "../../../components/landing-page-sections/statistic-section/Statistics";
-import Payments from "../../../components/landing-page-sections/payment-section/Payments";
+import Search from "../../../components/sections/search";
+import Categories from "../../../components/sections/categories";
+import Lots from "../../../components/sections/lots";
+import Statistics from "../../../components/sections/statistics";
+import Payments from "../../../components/sections/payments/Payments";
 
 const HomeContainer = () => {
   return (

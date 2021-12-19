@@ -5,7 +5,6 @@ import Button from "../../button/Button";
 import Container from "../../container/Container";
 import Flex from "../../flex/Flex";
 import Title from "../../title/Title";
-import Section from "../../section/Section";
 
 const Categories = (props) => {
   let [items, setItems] = useState(categories);
@@ -25,8 +24,8 @@ const Categories = (props) => {
   };
 
   return (
-    <section>
-      <Container>
+    <Container>
+      <section>
         <Flex justify column>
           <Title>MULK TURLARI</Title>
           <CategoryList items={items} />
@@ -34,8 +33,8 @@ const Categories = (props) => {
             {changeText ? "Barchasini ko'rish" : "Yopish"}
           </Button>
         </Flex>
-      </Container>
-    </section>
+      </section>
+    </Container>
   );
 };
 

@@ -3,11 +3,10 @@ import StatisticList from "./StatisticList";
 import statisticsBackground from "../../../assets/images/home-bg-statistics.png";
 import Title from "../../title/Title";
 import Container from "../../container/Container";
-import Section from "../../section/Section";
 
 const Statistics = (props) => {
   return (
-    <Section
+    <section
       style={{
         backgroundImage: `url(${statisticsBackground})`,
         backgroundRepeat: "repeat",
@@ -26,7 +25,7 @@ const Statistics = (props) => {
       <Container>
         <StatisticList />
       </Container>
-    </Section>
+    </section>
   );
 };
 

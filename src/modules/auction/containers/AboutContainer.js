@@ -4,10 +4,14 @@ import Breadcrumb from "../../../components/breadcrumb/Breadcrumb";
 
 const AboutContainer = (props) => {
   return (
-    <main>
-      <Breadcrumb />
-      <AboutAuction />
-    </main>
+    <>
+      <nav className="breadcrumb">
+        <Breadcrumb />
+      </nav>
+      <main>
+        <AboutAuction />
+      </main>
+    </>
   );
 };
 
